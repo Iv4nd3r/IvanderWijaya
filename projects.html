@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .gallery-item img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 
 <body>
@@ -27,7 +33,7 @@
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         const whitelist = []; // Replace with repository IDs you want to show
-        const blacklist = [860541982, 881402676, 796146457, 802070650, 881403512, 687890082, 913292574, 802121392]; // Replace with repository IDs you want to hide
+        const blacklist = [860541982, 881402676, 796146457, 802070650, 881403512, 687890082, 913292574, 802121392, 122809669]; // Replace with repository IDs you want to hide
 
         fetch('https://api.github.com/users/Iv4nd3r/repos')
             .then(response => response.json())

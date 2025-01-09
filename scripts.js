@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const whitelist = []; // Replace with repository IDs you want to show
   const blacklist = [
     860541982, 881402676, 796146457, 802070650, 881403512, 687890082, 913292574,
-    802121392,
+    802121392, 122809669,
   ]; // Replace with repository IDs you want to hide
 
   fetch("https://api.github.com/users/Iv4nd3r/repos")
