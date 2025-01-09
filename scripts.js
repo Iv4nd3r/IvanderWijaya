@@ -29,7 +29,6 @@ document.addEventListener("DOMContentLoaded", function () {
         filteredRepos.forEach((repo) => {
           const projectItem = document.createElement("div");
           projectItem.textContent = repo.name;
-          allProjectsContainer.appendChild(projectItem);
           featuredProjectsContainer.appendChild(projectItem.cloneNode(true));
         });
       } else {

@@ -72,7 +72,6 @@
                     const projectItem = document.createElement("div");
                     projectItem.textContent = repo.name;
                     allProjectsContainer.appendChild(projectItem);
-                    featuredProjectsContainer.appendChild(projectItem.cloneNode(true));
                 });
             } else {
                 console.error("Required containers not found in the DOM.");
