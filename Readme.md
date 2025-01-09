@@ -11,7 +11,7 @@ I am a Computer Engineering student at Universitas Indonesia, with expertise in 
 Here are some of the projects I have worked on:
 
 1. MobilizeAI : AI Enabled Web Application to Help Enterprise use Weather Data. Build using React and Node.js
-2. Project 2: Vulnerable insecure File Upload and password recovery web application. Build with React and Google Firebase
+2. Project: Vulnerable insecure File Upload and password recovery web application. Build with React and Google Firebase
 3. MYEnterprise : Enterprise Resource Planning Web Application. Build using Next.js and React
 
 ## Skills
