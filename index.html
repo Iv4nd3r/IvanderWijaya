@@ -52,35 +52,6 @@
             document.querySelectorAll('[data-en]').forEach(el => {
                 el.textContent = el.getAttribute(`data-${lang}`);
             });
-
-            // Certificates information
-            const certificates = [
-                {
-                    id: 1,
-                    title: 'Certificate 1',
-                    description: 'Description for Certificate 1',
-                    imageUrl: '/certificates/certificate1.jpg'
-                },
-                {
-                    id: 2,
-                    title: 'Certificate 2',
-                    description: 'Description for Certificate 2',
-                    imageUrl: '/certificates/certificate2.jpg'
-                }
-                // Add more certificates as needed
-            ];
-
-            const certificatesContainer = document.getElementById('certificates-container');
-            certificates.forEach(cert => {
-                const certItem = document.createElement('div');
-                certItem.classList.add('certificate-item');
-                certItem.innerHTML = `
-                    <h3>${cert.title}</h3>
-                    <p>${cert.description}</p>
-                    <img src="${cert.imageUrl}" alt="${cert.title}">
-                `;
-                certificatesContainer.appendChild(certItem);
-            });
         });
     </script>
 </body>
