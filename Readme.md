@@ -40,4 +40,4 @@ Here are some of the projects I have worked on:
 
 ## Contact Me
 
-Feel free to reach out to me via [email](ivander.andreas@ui.ac.id) or connect with me on [LinkedIn](https://linkedin.com/in/ivander-wijaya).
+Feel free to reach out to me via [email](mailto:ivander.andreas@ui.ac.id) or connect with me on [LinkedIn](https://linkedin.com/in/ivander-wijaya).
