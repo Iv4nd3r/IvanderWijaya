@@ -6,15 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .certificates img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="certificates.html">Certificates</a></li>
-                <li><a href="projects.html">Projects</a></li>
+                <li><a data-en="Home" data-id="Beranda" href="index.html">Home</a></li>
+                <li><a data-en="Certificates" data-id="Sertifikat" href="certificates.html">Certificates</a></li>
+                <li><a data-en="Projects" data-id="Proyek" href="projects.html">Projects</a></li>
                 <li>
                     <select id="language-switcher">
                         <option value="en">English</option>
@@ -42,6 +48,18 @@
             <h2 data-en="Featured Certificates" data-id="Sertifikat Unggulan">Featured Certificates</h2>
             <div class="gallery">
                 <!-- Featured certificates will be added here -->
+                <div class="certificates">
+                    <img src="https://raw.githubusercontent.com/Iv4nd3r/IvanderWijaya/refs/heads/main/certificates/Sertifikat%20Cisco%20Ethical%20Hacker_Ivander%20Andreas%20Wijaya%20-%200001.jpg"
+                        alt="Sertifikat Cisco Ethical Hacker">
+                        <img src="https://raw.githubusercontent.com/Iv4nd3r/IvanderWijaya/refs/heads/main/certificates/Sertifikat%20MathWorks%20Signal%20Processing%20Onramp_Ivander%20Andreas%20Wijaya%20-%200002.jpg"
+                            alt="Sertifikat MathWorks Signal Processing Onramp">
+                            <img src="https://raw.githubusercontent.com/Iv4nd3r/IvanderWijaya/refs/heads/main/certificates/Sertifikat%20Cisco%20CCNAv7_Ivander%20Andreas%20Wijaya%20-%200003.jpg"
+                                alt="Sertifikat Cisco CCNAv7">
+                                <img src="https://raw.githubusercontent.com/Iv4nd3r/IvanderWijaya/refs/heads/main/certificates/Sertifikat%20Google%20Play%20it%20Safe%20Manage%20Security%20Risks_Ivander%20Andreas%20Wijaya%20-%200004.jpg"
+                                    alt="Sertifikat Google Play it Safe Manage Security Risks">
+                                    <img src="https://raw.githubusercontent.com/Iv4nd3r/IvanderWijaya/refs/heads/main/certificates/Sertifikat%20Google%20Foundations%20of%20Cybersecurity_Ivander%20Andreas%20Wijaya%20-%200005.jpg"
+                                        alt="Sertifikat Google Foundations of Cybersecurity">
+                    </div>
             </div>
         </section>
     </main>
