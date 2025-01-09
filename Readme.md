@@ -4,34 +4,40 @@ Welcome to my personal portfolio website! This website showcases my skills, proj
 
 ## About Me
 
-I am a passionate and dedicated software developer with expertise in JavaScript, HTML, CSS, and various frameworks. I have a strong background in web development and a keen eye for design.
+I am a Computer Engineering student at Universitas Indonesia, with expertise in hardware, software, and network engineering. With these skills i able to provide a optimized IT solution for complex technical challenges while ensuring systems run efficiently and effectively. I have successfully lead a engineering team that demonstrates my commitment, leadership, and communication.
 
 ## Projects
 
 Here are some of the projects I have worked on:
 
-1. Project 1: A responsive e-commerce website built with React and Redux.
-2. Project 2: A mobile app for tracking fitness goals using React Native.
-3. Project 3: A personal finance management tool built with Angular and Firebase.
+1. MobilizeAI : AI Enabled Web Application to Help Enterprise use Weather Data. Build using React and Node.js
+2. Project 2: Vulnerable insecure File Upload and password recovery web application. Build with React and Google Firebase
+3. MYEnterprise : Enterprise Resource Planning Web Application. Build using Next.js and React
 
 ## Skills
 
 - JavaScript
 - HTML/CSS
 - React
-- Angular
+- Next.js
 - Node.js
 - Git
+- C++
+- C
+- Java
+- Swift
+- Kotlin
+- Swift 4
+- Python
 
 ## Experience
 
-- Software Developer at XYZ Company (2018-present)
-- Internship at ABC Company (2017)
+- Web Developer Staff at IEEE Student Branch Universitas Indonesia (2023 - 2024)
 
 ## Education
 
-- Bachelor's Degree in Computer Science, University of XYZ (2016-2018)
+- Bachelor's Degree in Computer Engineering, University of Indonesia (2022-now)
 
 ## Contact Me
 
-Feel free to reach out to me via email at [email protected] or connect with me on LinkedIn.
+Feel free to reach out to me via [email](ivander.andreas@ui.ac.id) or connect with me on [LinkedIn](https://linkedin.com/in/ivander-wijaya).
