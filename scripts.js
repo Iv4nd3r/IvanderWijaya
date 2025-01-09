@@ -5,75 +5,38 @@ document.addEventListener("DOMContentLoaded", function () {
     802121392, 914268436,
   ]; // Replace with repository IDs you want to hide
 
-  fetch("https://api.github.com/users/Iv4nd3r/repos")
-    .then((response) => response.json())
-    .then((data) => {
-      const publicRepos = data.filter((repo) => !repo.private);
-      const filteredRepos = publicRepos.filter(
-        (repo) =>
-          (whitelist.length === 0 || whitelist.includes(repo.id)) &&
-          !blacklist.includes(repo.id)
-      );
-      const projectsContainer = document.querySelector(
-        "#featured-projects .gallery"
-      );
-      filteredRepos.forEach((repo) => {
-        const projectItem = document.createElement("div");
-        projectItem.classList.add("gallery-item");
-        projectItem.innerHTML = `
-                    <h3>${repo.name}</h3>
-                    <p>${repo.description}</p>
-                    <a href="${repo.html_url}" target="_blank">View on GitHub</a>
-                `;
-        projectsContainer.appendChild(projectItem);
-      });
-    });
+  const urls = [
+    "https://api.github.com/users/Iv4nd3r/repos",
+    "https://api.github.com/users/SistemBasisData2024/repos",
+    "https://api.github.com/users/Evandita/repos",
+  ];
 
-  fetch("https://api.github.com/users/SistemBasisData2024/repos")
-    .then((response) => response.json())
-    .then((data) => {
-      const publicRepos = data.filter((repo) => !repo.private);
-      const filteredRepos = publicRepos.filter(
-        (repo) =>
-          (whitelist.length === 0 || whitelist.includes(repo.id)) &&
-          !blacklist.includes(repo.id)
-      );
-      const projectsContainer = document.querySelector(
-        "#featured-projects .gallery"
-      );
-      filteredRepos.forEach((repo) => {
-        const projectItem = document.createElement("div");
-        projectItem.classList.add("gallery-item");
-        projectItem.innerHTML = `
-                    <h3>${repo.name}</h3>
-                    <p>${repo.description}</p>
-                    <a href="${repo.html_url}" target="_blank">View on GitHub</a>
-                `;
-        projectsContainer.appendChild(projectItem);
-      });
-    });
+  Promise.all(
+    urls.map((url) => fetch(url).then((response) => response.json()))
+  ).then((results) => {
+    const allRepos = results.flat();
+    const publicRepos = allRepos.filter((repo) => !repo.private);
+    const filteredRepos = publicRepos.filter(
+      (repo) =>
+        (whitelist.length === 0 || whitelist.includes(repo.id)) &&
+        !blacklist.includes(repo.id)
+    );
 
-  fetch("https://api.github.com/users/Evandita/repos")
-    .then((response) => response.json())
-    .then((data) => {
-      const publicRepos = data.filter((repo) => !repo.private);
-      const filteredRepos = publicRepos.filter(
-        (repo) =>
-          (whitelist.length === 0 || whitelist.includes(repo.id)) &&
-          !blacklist.includes(repo.id)
-      );
-      const projectsContainer = document.querySelector(
-        "#featured-projects .gallery"
-      );
-      filteredRepos.forEach((repo) => {
-        const projectItem = document.createElement("div");
-        projectItem.classList.add("gallery-item");
-        projectItem.innerHTML = `
+    const allProjectsContainer = document.querySelector("#all-projects");
+    const featuredProjectsContainer = document.querySelector(
+      "#featured-projects .gallery"
+    );
+
+    filteredRepos.forEach((repo) => {
+      const projectItem = document.createElement("div");
+      projectItem.classList.add("gallery-item");
+      projectItem.innerHTML = `
                     <h3>${repo.name}</h3>
                     <p>${repo.description}</p>
                     <a href="${repo.html_url}" target="_blank">View on GitHub</a>
                 `;
-        projectsContainer.appendChild(projectItem);
-      });
+      allProjectsContainer.appendChild(projectItem);
+      featuredProjectsContainer.appendChild(projectItem.cloneNode(true));
     });
+  });
 });
