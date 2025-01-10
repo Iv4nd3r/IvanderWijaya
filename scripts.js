@@ -12,9 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const allRepos = results.flat();
       const publicRepos = allRepos.filter((repo) => !repo.private);
       const filteredRepos = publicRepos.filter(
-        (repo) =>
-          (whitelist.length === 0 || whitelist.includes(repo.id)) &&
-          !blacklist.includes(repo.id)
+        (repo) => whitelist.length === 0 || whitelist.includes(repo.id)
       );
 
       const featuredProjectsContainer = document.querySelector(
